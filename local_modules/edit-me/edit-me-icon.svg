@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>edit-me-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="edit-me-icon" sketch:type="MSLayerGroup" fill="#3DBDEE">
+            <path d="M15.961,8.479 C15.961,12.885 12.391,16.495 7.984,16.495 C3.57,16.495 0,12.886 0,8.479 C0,4.065 3.57,0.495 7.984,0.495 C12.391,0.495 15.961,4.065 15.961,8.479 L15.961,8.479 Z M9.977,14.995 C12.711,14.018 14.711,11.495 14.711,8.479 C14.711,4.76 11.695,1.745 7.984,1.745 C4.265,1.745 1.25,4.761 1.25,8.479 C1.25,11.526 3.281,14.065 6.062,14.995 L6.062,13.714 C6.062,12.948 6.382,12.542 6.703,12.323 C4.969,12.143 3.109,11.518 3.109,8.518 C3.109,7.674 3.406,6.987 3.898,6.456 C3.82,6.253 3.562,5.472 3.977,4.417 C3.977,4.417 4.625,4.206 6.094,5.206 C6.703,5.034 7.367,4.948 8.016,4.948 C8.672,4.948 9.328,5.034 9.946,5.206 C11.415,4.206 12.055,4.417 12.055,4.417 C12.477,5.472 12.211,6.253 12.133,6.456 C12.625,6.987 12.922,7.675 12.922,8.518 C12.922,11.518 11.063,12.143 9.328,12.323 C9.648,12.542 9.976,12.948 9.976,13.714 L9.976,14.995 L9.977,14.995 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

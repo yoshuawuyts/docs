@@ -1,0 +1,29 @@
+/**
+ * Edit me.
+ */
+
+.edit-me {
+  position: absolute;
+  top: 48px;
+  right: 30px;
+}
+
+.edit-me-button {
+  padding: 8px 10px;
+  border-radius: 2px;
+  color: $color-skyblue_base;
+  background-color: transparent;
+  font-weight: $fontWeight_light;
+  font-size: $fontSize_small;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 1px $color-skyblue_base;
+  transition: all $duration_fastest $easing_smooth;
+}
+
+.edit-me-button:hover {
+  color: $color-skyblue_base;
+}
+
+.edit-me-button img {
+  vertical-align: bottom;
+}
