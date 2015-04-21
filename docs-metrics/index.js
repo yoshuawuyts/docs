@@ -1,31 +1,23 @@
-/**
- * Setup buttons and links
- */
-var signupNavSub        =    document.querySelector('#signup-nav-sub');
-var signupFooterSub     =    document.querySelector('#signup-footer-sub');
-var newsletterJoin      =    document.querySelector('#newsletter-join');
+const signupNavSub = document.querySelector('#signup-nav-sub')
+const signupFooterSub = document.querySelector('#signup-footer-sub')
+const newsletterJoin = document.querySelector('#newsletter-join')
 
-/**
- * Setup event listeners
- */
-signupNavSub.onclick = trackSignupClick;
-signupFooterSub.onclick = trackSignupClick;
-newsletterJoin.onclick = trackCorporateClick;
+if (signupNavSub) signupNavSub.onclick = trackSignupClick
+if (signupFooterSub) signupFooterSub.onclick = trackSignupClick
+if (newsletterJoin) newsletterJoin.onclick = trackCorporateClick
 
-/**
- * Sign up clicks on sub pages
- */
+// sign up clicks on sub pages
+// obj -> obj
 function trackSignupClick (e) {
-  var buttonId  =  e.target.getAttribute('id');
-  var pageId    =  document.querySelector('body').getAttribute('id');
-  return client.trackExternalLink(event, 'signup_click', {id: buttonId, page: pageId});
+  const buttonId = e.target.getAttribute('id')
+  const pageId = document.querySelector('body').getAttribute('id')
+  return client.trackExternalLink(event, 'signup_click', {id: buttonId, page: pageId})
 }
 
-/**
- * External link clicks
- */
+// external links
+// obj -> obj
 function trackCorporateClick (e) {
-  var buttonId  =  e.target.getAttribute('id');
-  var pageId    =  document.querySelector('body').getAttribute('id');
-  return client.trackExternalLink(event, "corporate_click", {id: buttonId, page: pageId});
+  const buttonId = e.target.getAttribute('id')
+  const pageId = document.querySelector('body').getAttribute('id')
+  return client.trackExternalLink(event, "corporate_click", {id: buttonId, page: pageId})
 }

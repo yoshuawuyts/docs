@@ -1,5 +1,5 @@
 {
-  "name": "docs-view-api",
+  "name": "@docs/view-api",
   "version": "1.0.0",
   "description": "docs-view-api",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "standard && NODE_ENV=test node test",
     "test-cov": "standard && NODE_ENV=test istanbul cover test.js"
   },
-  "repository": "yoshuawuyts/docs-view-api",
+  "repository": "wercker/docs-view-api",
   "keywords": [],
   "license": "MIT",
   "dependencies": {},

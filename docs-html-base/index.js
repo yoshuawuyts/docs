@@ -7,5 +7,5 @@ module.exports = html;
 // null -> stream
 function html() {
   const location = path.join(__dirname, 'index.html');
-  return fs.readFileStream(location);
+  return fs.createReadStream(location);
 }

@@ -5,13 +5,10 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "build": "make build",
+    "build": "./bin.js build",
     "postinstall": "echo 'linklocal' && linklocal link -r && linklocal list -r | bulk -c 'npm install'",
-    "start": "make all",
-    "nwstart": "NODE_ENV=development ./bin.js server -p 1337",
-    "nwbuild": "./bin.js build",
-    "test": "make test",
-    "watch": "watchify index.js -t brfs -o build/bundle.js"
+    "start": "NODE_ENV=development ./bin.js start -p 1337 | garnish",
+    "test": "NODE_ENV=test test"
   },
   "repository": "wercker/dev",
   "keywords": [],
@@ -31,6 +28,7 @@
     "@docs/page-not-found": "file:docs-page-not-found",
     "@docs/quicklinks": "file:docs-quicklinks",
     "@docs/sidebar": "file:docs-sidebar",
+    "@docs/view-api": "file:docs-view-api",
     "@react/icon": "file:react-icon",
     "@wercker/wercker-animations": "file:wercker-animations",
     "@wercker/wercker-colors": "file:wercker-colors",
@@ -57,6 +55,7 @@
     "envify": "^3.0.0",
     "es6ify": "^1.4.0",
     "eslint": "^0.8.2",
+    "garnish": "^2.1.3",
     "gulp": "^3.8.8",
     "gulp-concat": "^2.4.1",
     "gulp-flatten": "0.0.4",
