@@ -20,6 +20,7 @@
     "@docs/articles": "file:docs-articles",
     "@docs/build": "file:docs-build",
     "@docs/cards": "file:docs-cards",
+    "@docs/html-base": "file:docs-html-base",
     "@docs/footer": "file:docs-footer",
     "@docs/gh-button": "file:docs-gh-button",
     "@docs/header": "file:docs-header",
