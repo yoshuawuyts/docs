@@ -30,6 +30,7 @@
 
 .api-article {
   display: flex;
+  width: var(--layout-article-width);
 }
 
 .api-article > section,

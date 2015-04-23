@@ -32,5 +32,6 @@
   --layout-sidebar-width: 160px;
   --layout-sidebar-padding: 20px;
   --layout-article-padding: 20px;
+  --layout-article-width: calc(100vw - var(--layout-sidebar-width));
   --layout-figure-padding: 20px;
 }
