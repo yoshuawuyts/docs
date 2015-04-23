@@ -9,7 +9,7 @@
   padding: var(--layout-sidebar-padding);
   width: var(--layout-sidebar-width);
   overflow-y: auto;
-  background-color: var(--color-grey_darker);
+  background-color: var(--color-grey_lighter);
 }
 
 /**
@@ -43,6 +43,6 @@
 
 .api-article > figure {
   padding: var(--layout-figure-padding);
-  background-color: var(--color-grey_darker);
+  background-color: var(--color-grey_dark);
   color: var(--color-grey_lighter);
 }

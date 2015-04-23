@@ -38,11 +38,15 @@ router.on('/build.css', function(cb) {
   const route = path.join(root, 'index.css')
   fs.readFile(route, 'utf8', function(err, styles) {
     if (err) return cb(err)
-    const res = rework(styles, {source: route})
-      .use(myth({source: route}))
-      .use(npm({root: root}))
-      .toString()
-    cb(null, res)
+    try {
+      const res = rework(styles, {source: route})
+        .use(myth({source: route}))
+        .use(npm({root: root}))
+        .toString()
+      cb(null, res)
+    } catch(e) {
+      cb(e)
+    }
   })
 })
 
