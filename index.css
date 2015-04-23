@@ -2,7 +2,7 @@
 
 @import 'wercker-animations/index.css';
 @import 'wercker-typography/index.css';
-@import 'wercker-colors/index.css';
+@import 'wercker-vars/index.css';
 @import 'wercker-fonts/index.css';
 @import 'wercker-flex/index.css';
 
