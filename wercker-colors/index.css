@@ -28,4 +28,9 @@
   --color-twitter_base: #00A9F1;
   --color-facebook_base: #3A579A;
   --color-googleplus_base: #D74022;
+
+  --layout-sidebar-width: 160px;
+  --layout-sidebar-padding: 20px;
+  --layout-article-padding: 20px;
+  --layout-figure-padding: 20px;
 }

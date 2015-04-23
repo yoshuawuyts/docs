@@ -9,6 +9,7 @@ require('webcomponents.js');
 
 // register custom elements
 document.registerElement('gh-button', require('@docs/gh-button'));
+require('@docs/api-article');
 
 var learnblocksSelector = document.querySelector('.learn-blocks');
 if (learnblocksSelector) react.renderComponent(learnblocks(), learnblocksSelector);

@@ -1,0 +1,48 @@
+/**
+ * Navigation
+ */
+
+.api-navigation {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding: var(--layout-sidebar-padding);
+  width: var(--layout-sidebar-width);
+  overflow-y: auto;
+  background-color: var(--color-grey_darker);
+}
+
+/**
+ * Main
+ */
+
+.api-main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: calc(var(--layout-sidebar-width) + var(--layout-sidebar-padding) * 2);
+  min-height: 100vh;
+}
+
+/**
+ * Article
+ */
+
+.api-article {
+  display: flex;
+}
+
+.api-article > section,
+.api-article > figure {
+  width: 50%;
+}
+
+.api-article > section {
+  padding: var(--layout-article-padding);
+}
+
+.api-article > figure {
+  padding: var(--layout-figure-padding);
+  background-color: var(--color-grey_darker);
+  color: var(--color-grey_lighter);
+}

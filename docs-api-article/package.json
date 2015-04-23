@@ -1,0 +1,27 @@
+{
+  "name": "@docs/api-article",
+  "version": "1.0.0",
+  "description": "api-article",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && NODE_ENV=test node test",
+    "test-cov": "standard && NODE_ENV=test istanbul cover test.js"
+  },
+  "repository": "docs/api-article",
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "highlight.js": "^8.5.0",
+    "sliced": "0.0.5"
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.13",
+    "standard": "^3.7.0",
+    "tape": "^4.0.0"
+  },
+  "files": [
+    "LICENSE",
+    "index.js",
+    "README.md"
+  ]
+}
