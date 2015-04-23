@@ -2,6 +2,7 @@
 
 const summary = require('server-summary')
 const cliclopts = require('cliclopts')
+const isStream = require('is-stream')
 const router = require('@docs/build')
 const minimist = require('minimist')
 const assert = require('assert')
@@ -46,9 +47,11 @@ if (cmd === 'build') router.build(__dirname + '/build', function(err, res) {
 function server() {
   return http.createServer(function(req, res) {
     const pathname = url.parse(req.url).pathname
-    console.log({url: pathname})
+    console.log(JSON.stringify({url: pathname, type: 'static'}))
     router.match(pathname, function(err, body) {
-      if (err) console.error(err)
+      err = typeof err === 'object' ? err.toString() : err
+      if (err) console.log(JSON.stringify({level: 'error', url: pathname, message: err}))
+      if (isStream(body)) return body.pipe(res)
       res.end(body)
     })
   })

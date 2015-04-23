@@ -27,10 +27,7 @@ module.exports = router
 
 // browserify bundle
 router.on('/bundle.js', function(cb) {
-  b.bundle().pipe(bl(function(err, buffer) {
-    if (err) return cb(err)
-    cb(null, buffer)
-  }))
+  cb(null, b.bundle())
 })
 
 // myth bundle
