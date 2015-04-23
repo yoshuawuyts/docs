@@ -49,8 +49,11 @@ function server() {
     const pathname = url.parse(req.url).pathname
     console.log(JSON.stringify({url: pathname, type: 'static'}))
     router.match(pathname, function(err, body) {
-      err = typeof err === 'object' ? err.toString() : err
-      if (err) console.log(JSON.stringify({level: 'error', url: pathname, message: err}))
+      if (err) {
+        err = (typeof err === 'object') ? err.toString() : err
+        const ndj = JSON.stringify({level: 'error', url: pathname, message: err})
+        console.log(ndj)
+      }
       if (isStream(body)) return body.pipe(res)
       res.end(body)
     })
